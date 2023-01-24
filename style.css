@@ -13,8 +13,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-size: 16px;
-    width: 100%;
 }
 header{
     background-color: var(--cor1);
@@ -48,35 +46,57 @@ header a:hover{
     text-decoration: underline;
     padding: 5px 5px 5px 5px;
 }
-main{
+main p{
+    text-indent: 5px;
+    line-height: 60px;
     text-align: justify;
     font-weight: normal;
     font-family: var(--fonte-padrão);
-    text-indent: 5px;
-    line-height: 55px;
-    margin: 30px;
-}
-main p{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 50px;
     font-size: 1.8rem;
     color: rgb(0, 0, 0)
 }
+section.imagem > p{
+    color: rgb(255, 255, 255);
+}
 section#img01{
-    background: lightgray url(imagens/igor-sporynin-abng8QH-tjE-unsplash.jpg) no-repeat fixed center center;
+    background: rgb(255, 233, 204) url(imagens/igor-sporynin-abng8QH-tjE-unsplash_gimp.jpg) no-repeat fixed center center;
     background-size: cover;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.548);
-    margin: -30px;
-    padding: 30px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.726);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.514);
     text-align: left;
     max-width: 100%;
 }
 section#img02{
-    background: lightgray url(imagens/mauro-lima-icL3YmojLLc-unsplash.jpg) no-repeat fixed center center;
+    background: rgb(255, 233, 204) url(imagens/mauro-lima-icL3YmojLLc-unsplash_gimp.jpg) no-repeat fixed center center;
     background-size: cover;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.548);
-    margin: -30px;
-    padding: 30px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.637);
     text-align: left;
     max-width: 100%;
+}
+footer{
+    background-color: var(--cor1);
+    padding: 5px;
+    text-align: center
+}
+footer p{
+    font-weight: normal;
+    font-family: var(--fonte-subtitulo);
+    font-size: 1em;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.418);
+}
+footer a{
+    font-weight: bold;
+    font-family: var(--fonte-subtitulo);
+    font-size: 1em;
+    color: var(--cor0);
+    text-decoration: none;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.418);
+    transition-duration: 0.5s;
+}
+footer a:hover{
+    text-decoration: underline;
+    padding: 5px 5px 5px 5px;
 }
