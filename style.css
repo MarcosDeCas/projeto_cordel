@@ -22,21 +22,22 @@ header{
 header h1{
     font-weight: normal;
     font-family: var(--fonte-titulo);
-    font-size: 4em;
+    font-variant: small-caps;
+    font-size: 10vw;
     color: white;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.418);
 }
 header p{
     font-weight: normal;
     font-family: var(--fonte-subtitulo);
-    font-size: 1em;
+    font-size: 2vw;
     color: white;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.418);
 }
 header a{
     font-weight: bold;
     font-family: var(--fonte-subtitulo);
-    font-size: 1em;
+    font-size: 2vw;
     color: var(--cor0);
     text-decoration: none;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.418);
@@ -44,28 +45,42 @@ header a{
 }
 header a:hover{
     text-decoration: underline;
-    padding: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
 }
-main p{
+section{
     text-indent: 5px;
-    line-height: 60px;
+    line-height: 2em;
     text-align: justify;
     font-weight: normal;
     font-family: var(--fonte-padrão);
-    padding: 50px;
-    font-size: 1.8rem;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    padding-left: 30px;
+    font-size: 2.5vw;
     color: rgb(0, 0, 0)
 }
+section.normal{
+    background-color: var(--cor0);
+    color: var(--cor1);
+}
+section.imagem{
+    background-color: var(--cor1);
+    color: var(--cor0);
+}
 section.imagem > p{
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.63);
     color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 20px;
 }
 section#img01{
-    background: rgb(255, 233, 204) url(imagens/igor-sporynin-abng8QH-tjE-unsplash_gimp.jpg) no-repeat fixed center center;
+    background: rgb(255, 233, 205) url(imagens/igor-sporynin-abng8QH-tjE-unsplash_gimp.jpg) no-repeat fixed center center;
     background-size: cover;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.726);
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.514);
     text-align: left;
-    max-width: 100%;
 }
 section#img02{
     background: rgb(255, 233, 204) url(imagens/mauro-lima-icL3YmojLLc-unsplash_gimp.jpg) no-repeat fixed center center;
@@ -73,7 +88,6 @@ section#img02{
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.548);
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.637);
     text-align: left;
-    max-width: 100%;
 }
 footer{
     background-color: var(--cor1);
@@ -83,7 +97,7 @@ footer{
 footer p{
     font-weight: normal;
     font-family: var(--fonte-subtitulo);
-    font-size: 1em;
+    font-size: 1.5vw;
     color: white;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.418);
 }
@@ -98,5 +112,5 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
-    padding: 5px 5px 5px 5px;
+    padding: 2px 2px 2px 2px;
 }
